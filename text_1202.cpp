@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-//ÄÚ´æ³¬ÏŞ
+//å†…å­˜è¶…é™
 //#include<iostream>
 //#include<vector>
 //#include<set>
@@ -9,11 +9,11 @@
 //int enjine[100000][10000] = { 0 };
 //int main()
 //{
-//    int n, m, q; cin >> n >> m >> q;//ÒıÇæÊı£¬±¦Ê¯ÖÖÀàÊı£¬¿ª²É±¦Ê¯ÊıÁ¿
-//    //vector<int>type;//±¦Ê¯ÖÖÀà¶ÔÓ¦µÄÄÜÁ¿
+//    int n, m, q; cin >> n >> m >> q;//å¼•æ“æ•°ï¼Œå®çŸ³ç§ç±»æ•°ï¼Œå¼€é‡‡å®çŸ³æ•°é‡
+//    //vector<int>type;//å®çŸ³ç§ç±»å¯¹åº”çš„èƒ½é‡
 //    int* type = (int*)malloc(sizeof(int) * m);
 //    int tmp = m;
-//    //int** enjine = (int**)malloc(sizeof(int*) * n);//ÒıÇæµÄÄÜÁ¿
+//    //int** enjine = (int**)malloc(sizeof(int*) * n);//å¼•æ“çš„èƒ½é‡
 //    //for(int i=0;i<n;i++) enjine[i]= (int*)malloc(sizeof(int) * m);
 //    for (int i = 0; i < n; i++)
 //    {
@@ -28,7 +28,7 @@
 //    }
 //    while (q--)
 //    {
-//        int jewel,location;      cin >> jewel>>location;//±¦Ê¯ºÍÎ»ÖÃ
+//        int jewel,location;      cin >> jewel>>location;//å®çŸ³å’Œä½ç½®
 //        for (int i = location-1; i < min(location + type[jewel-1]-1, n); i++)
 //        {
 //            enjine[i][jewel-1] = 1;
@@ -243,7 +243,7 @@
 //    left,
 //    right
 //};
-//int text(int x, int y)//Èç¹û»¥Ö¸ÔòÎª¼Ù
+//int text(int x, int y)//å¦‚æœäº’æŒ‡åˆ™ä¸ºå‡
 //{
 //    if (x % y == 1) return 0;
 //    if (x % y == 0) return 1;
@@ -252,24 +252,24 @@
 ////              1 2
 //void text_2(int x, int y, int* re)
 //{
-//    //²éÖØ
+//    //æŸ¥é‡
 //    if (check[y][x] == true) return;
 //    check[y][x] = true;
 //    (*re)++;
-//    if (y > 0)//ÏñÉÏ×ß
+//    if (y > 0)//åƒä¸Šèµ°
 //    {
 //        if (text(mode[y][x], mode[y-1][x]) == 1)
 //            text_2(x, y - 1, re);
 //    }
-//    if (y<n-1)//ÏñÏÂ×ß
+//    if (y<n-1)//åƒä¸‹èµ°
 //    {
 //        if (text(mode[y][x], mode[y+1][x]) == 1)
 //            text_2(x, y +1, re);
-//    }if (x>0)//Ïñ×ó×ß
+//    }if (x>0)//åƒå·¦èµ°
 //    {
 //        if (text(mode[y][x-1], mode[y][x]) == 1)
 //            text_2(x-1, y, re);
-//    }if (x<m-1)//ÏñÓÒ×ß
+//    }if (x<m-1)//åƒå³èµ°
 //    {
 //        if (text(mode[y][x+1], mode[y][x]) == 1)
 //            text_2(x+1, y, re);
